@@ -8,7 +8,15 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="flex items-center justify-between bg-brandHotPink px-4 py-2">
+    <nav
+      className="
+        fixed top-0 left-0 w-full z-50
+        flex items-center
+        bg-brandHotPink
+        px-[80px] py-2
+        font-inter font-semibold text-[22.48px]
+      "
+    >
       {/* Left: Logo */}
       <div className="flex items-center">
         <Link href="/" className="flex items-center">
@@ -22,8 +30,8 @@ export default function Navbar() {
         </Link>
       </div>
 
-      {/* Middle: Nav Links (hidden on mobile) */}
-      <ul className="hidden md:flex space-x-8">
+      {/* Middle: Nav Links (Centered on desktop) */}
+      <ul className="hidden md:flex flex-1 justify-center space-x-[250px]">
         <li>
           <Link href="#schedule" className="text-brandWhite hover:text-gray-100">
             Schedule
@@ -36,13 +44,20 @@ export default function Navbar() {
         </li>
       </ul>
 
-      {/* Right: Contact Us Button (hidden on mobile) */}
+      {/* Right: Contact Us (hidden on mobile) */}
       <div className="hidden md:block">
         <a
           href="https://wa.me/6281808418666"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center bg-brandGreen hover:bg-brandGreen text-brandWhite px-4 py-2 rounded"
+          className="
+            inline-flex items-center
+            bg-brandGreen text-brandWhite
+            border-2 border-brandWhite
+            rounded-[10px]
+            px-4 py-2
+            hover:bg-brandGreen
+          "
         >
           <Image
             src="/whatsapp_icon.svg"
@@ -75,7 +90,15 @@ export default function Navbar() {
 
       {/* Mobile Dropdown Menu */}
       {isOpen && (
-        <div className="absolute top-14 left-0 w-full bg-brandHotPink flex flex-col items-center md:hidden space-y-4 py-4 z-10">
+        <div
+          className="
+            absolute top-[56px] left-0 w-full
+            bg-brandHotPink
+            flex flex-col items-center
+            md:hidden space-y-4 py-4 z-10
+            font-inter font-semibold text-[22.48px]
+          "
+        >
           <Link
             href="#schedule"
             className="text-brandWhite hover:text-gray-100"
@@ -90,12 +113,18 @@ export default function Navbar() {
           >
             Classes
           </Link>
-          {/* WhatsApp button in mobile menu */}
           <a
             href="https://wa.me/6281808418666"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center bg-brandGreen hover:bg-brandGreen text-brandWhite px-4 py-2 rounded"
+            className="
+              inline-flex items-center
+              bg-brandGreen text-brandWhite
+              border-2 border-brandWhite
+              rounded-[10px]
+              px-4 py-2
+              hover:bg-brandGreen
+            "
           >
             <Image
               src="/whatsapp_icon.svg"

@@ -16,6 +16,9 @@ export default {
         brandLightPink:  "#EAD7D9",
         brandGreen:      "#20B525",
       },
+      fontFamily: {
+        inter: ['var(--font-inter)', 'sans-serif'],
+      },
     },
   },
   plugins: [],
