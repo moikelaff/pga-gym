@@ -34,8 +34,8 @@ export default function Footer() {
             <a href="https://www.instagram.com/phoenixgymacademy" target="_blank" rel="noopener noreferrer" className="hover:opacity-80">
               <Image src="/instagram.svg" alt="Instagram" width={24} height={24} />
             </a>
-            <a href="mailto:phoenixgymnasticsa@gmail.com" className="hover:opacity-80">
-              <Image src="/email.svg" alt="Email" width={24} height={24} />
+            <a href="https://www.facebook.com/share/18hNdnNBHt/?mibextid=qi2Omg" className="hover:opacity-80">
+              <Image src="/facebook.svg" alt="facebook" width={24} height={26} />
             </a>
           </div>
         </div>
