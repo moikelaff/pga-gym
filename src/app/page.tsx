@@ -1,5 +1,5 @@
 // app/page.tsx
-import { Hero, Schedule, Classes, Membership, Testimonials, Contacts, Footer } from './components';
+import { Hero, Schedule, Classes, Membership, Testimonials, Contacts, Footer, Articles } from './components';
 
 export default function Home() {
   return (
@@ -7,6 +7,7 @@ export default function Home() {
       <Hero />
       <Classes />
       <Schedule />
+      <Articles />
       <Membership />
       <Testimonials />
       <Contacts />
