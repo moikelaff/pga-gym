@@ -4,7 +4,7 @@ import "./globals.css";
 import Navbar from "./components/navbar";
 
 // Correctly configure the Inter font
-export const inter = Inter({
+const inter = Inter({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],
   display: 'swap',
@@ -22,7 +22,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${inter.className}`}>
+    <html lang="en" className={inter.className}> {/* Apply the className for the font */}
       <body>
         <Navbar />
         {children}

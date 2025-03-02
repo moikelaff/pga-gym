@@ -9,7 +9,7 @@ type PopupProps = {
   index: number;
 };
 
-const  Popup = (props) => {
+const  Popup = (props: PopupProps) => {
     const [textVisibility, setTextVisibility] = useState(false);
     const [onhover, setOnHover] = useState(false);
     const handleMouseEnter = () => {
@@ -24,6 +24,7 @@ const  Popup = (props) => {
           <Image
             src={props.image}
             layout="responsive"
+            alt="article"
             width={1500}
             height={1200}
             className="object-cover w-full"

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Popup from "./Popup";
 
 type Article = {
@@ -30,7 +29,7 @@ const Articles = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-2">
           {articles.map((article, index) => (
             <div key={index} className="relative w-full">
-              <Popup image={article.image} description={article.description} index={index}>{article}</Popup>
+              <Popup image={article.image} description={article.description} index={index}></Popup>
               </div>))}
           {/* Last Grid Box for "Read Our Articles" */}
           <div className="bg-brandHotPink flex items-center justify-center p-6 w-full">
