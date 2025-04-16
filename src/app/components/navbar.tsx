@@ -47,7 +47,7 @@ export default function Navbar() {
       {/* Right: Contact Us (hidden on mobile) */}
       <div className="hidden md:block">
         <a
-          href="https://wa.me/6281808418666"
+          href="https://wa.me/6285711194565"
           target="_blank"
           rel="noopener noreferrer"
           className="

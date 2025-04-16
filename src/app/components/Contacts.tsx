@@ -17,7 +17,7 @@ export default function Contacts() {
               <strong>Address:</strong> Cinere Bellevue Mall, GF 18-20, Jalan Merawan No.23, Pangkalan Jati, Kec. Cinere, Kota Depok, Jawa Barat - 16514
             </p>
             <p className="text-brandNavy mb-6 text-sm md:text-base">
-              <strong>Phone:</strong> +6281808418666
+              <strong>Phone:</strong> +6285711194565
             </p>
             
             <div className="w-full h-64 md:h-96 bg-gray-200 rounded-lg overflow-hidden">
