@@ -70,7 +70,7 @@ export default function Membership() {
             <p className="text-brandNavy">
               Sign up with your 
               <span className="font-bold"> Siblings </span>
-              and enjoy a 15% 
+              and enjoy a 20% 
               <span className="font-bold"> Discount </span>
               on your total monthly fees!
             </p>
